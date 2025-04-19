@@ -1,0 +1,20 @@
+field_name,required,description,type,format_or_example
+riflayoff_id,TRUE,Unique identifier for RIF/layoff event,string,
+agency_name,TRUE,Full name of agency or sub-agency,string,"Department of the Interior"
+unit_affected,TRUE,Specific office, program, or division affected,string,"National Park Service"
+headcount,TRUE,Estimated number of employees affected,integer,
+criticality,TRUE,Clarifies whether roles are frontline or administrative,binary,"0: Admin support / backend; 1: Mission critical / frontline"
+function_affected,TRUE,Operational area or function code affected,string,See separate function taxonomy
+hiring_type,TRUE,Type of federal civil service position,enum,"Competitive, Excepted, Senior Executive"
+employment_status,TRUE,Employment classification at time of RIF/layoff,enum,"Career, Probationary, Temporary, Contractor, Unknown"
+date_of_riflayoff,TRUE,Effective date of layoff,date,YYYY-MM-DD
+date_announced,FALSE,Date layoff was announced,date,YYYY-MM-DD
+region_affected,FALSE,FIPS code for state and/or county affected,integer,"27053 (Hennepin County, MN)"
+reason_provided,FALSE,Official rationale or language used,string,"Budget"
+departure_type,TRUE,Type of separation or departure,enum,"Voluntary- Planned Reduction, Voluntary- Unplanned Reduction, Voluntary, Involuntary- Planned Reduction, Involuntary- Unplanned Reduction, Involuntary Layoff, Planned, Resignation"
+backfill_strategy,FALSE,Planned or actual backfill response,string,"Reassignment, None"
+reinstatement,FALSE,Whether the position was reinstated,binary,"0: Not Reinstated; 1: Reinstated"
+data_source,TRUE,URL or title of source string,string,"FOIA"
+notes,FALSE,Free-text notes or context,string,
+data_confidence,FALSE,Confidence in accuracy of source,enum,"High, Medium, Low"
+record_updated,TRUE,Last modified date of this record,date,YYYY-MM-DD
