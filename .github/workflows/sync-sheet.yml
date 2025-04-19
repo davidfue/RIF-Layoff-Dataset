@@ -3,26 +3,27 @@ name: Sync Google Sheet to CSV
 on:
   schedule:
     - cron: '0 * * * *'  # Runs every hour
-  workflow_dispatch:     # Allow manual runs
+  workflow_dispatch:
 
 jobs:
   update-csv:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # allows git push
+
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-    - name: Download Google Sheet
-      run: |
-        curl -L "https://docs.google.com/spreadsheets/d/e/https://docs.google.com/spreadsheets/d/e/2PACX-1vQe0RFDClfz265mk-maJOQ-G5vDBvVZwXb-w0_JBvegM0yUcm-tP3IXMjOotREFgL1hn7TCllls8ADL/pub?output=csv/pub?output=csv" -o rif_layoffs_data.csv
+      - name: Download Google Sheet as CSV
+        run: |
+          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vQe0RFDClfz265mk-maJOQ-G5vDBvVZwXb-w0_JBvegM0yUcm-tP3IXMjOotREFgL1hn7TCllls8ADL/pub?output=csv" -o rif_layoffs_data.csv
 
-    - name: Commit & Push if changed
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add rif_layoffs_data.csv || true
-        git diff --cached --quiet || git commit -m "Auto-update CSV from Google Sheets"
-        git push
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Commit & Push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add rif_layoffs_data.csv
+          git diff --cached --quiet || git commit -m "Auto-update CSV from Google Sheets"
+          git push origin HEAD
