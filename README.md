@@ -1,19 +1,3 @@
-/RIF-Impact-Framework/
-  │
-  ├── README.md                  # Project overview
-  ├── USE_STANDARDS.md           # Ethical use, anti-harm, limitations
-  │
-  ├── schema/
-  │   ├── rif_schema.yaml 	    # The actual YAML schema
-  │   ├── example_data.csv       # Example CSV data
-  │   └── schema_validator.ipynb # (Optional) Python notebook
-  │
-  ├── docs/
-  │   └── glossary.md            # Clear definitions of key terms
-  │
-  ├── .gitignore                 # Standard GitHub ignore file
-  └── LICENSE                    # CC BY 4.0 or MIT
-
 # RIF Impact Schema
 
 Welcome to the open-source framework for understanding and documenting the impact of government Reductions in Force (RIF). Built with love by graduate students at Carnegie Mellon! 
