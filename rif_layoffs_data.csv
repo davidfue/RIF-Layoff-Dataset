@@ -1,4 +1,26 @@
-Timestamp,Agency Name (Full name of agency or sub-agency),"Unit Affected (Specific office, program, or division affected)",Headcount (Estimated number layoffs),"Criticality (0 = Admin/Support, 1 = Mission Critical)",Function Affected ( Operational areas affected),Hiring Type (Type of federal service position),Employment Status (Status of original employment),Date of RIF Announcement,Date Announced (Date layoff was announced),State Affected (Pick the State RIF Took Place),County Affected (Pick the County RIF Took Place),Reason Provided (Official rationale or source language),Departure Type (Type of separation),Backfill Strategy (If there was one),Program Delivery,Data Source( URL or title of primary document/souce),Notes,Data Confidence,Effective Date (FIPS code for state and/or county),Record Updated,Union Representation,Capability Loss Narrative,Expertise Loss,Region Affected (FIPS Code Only),Approve? (THIS MAKES THE ROW'S DATA LIVE)
-4/19/2025 18:27:50,IRS,DEI ,132,0,Operations,Competative,Career,4/2/2025,4/8/2025,Idaho,Coffee County,Executive Order,Layoff,None,0 - Not Reinstated,IRS HR,This is a test,High,,,,,,,YES
-4/19/2025 18:39:47,FBI,DEI,88,0,Operations,Competative,Temporary,4/1/2025,4/10/2025,Alabama,Conecuh County,Exec order,Layoff,None,0 - Not Reinstated,FBI HR,This is a test,Medium,,,,,,,YES
-4/19/2025 18:40:56,CIA,DEI,10,0,Operations,Senior Executive,Career,4/8/2025,4/17/2025,Rhode Island,Morgan County,Executive Order,Layoff,None,0 - Not Reinstated,CIA HR,This is a test,Low,,,,,,,YES
+Timestamp,"Agency Name (Full name of agency or sub-agency)
+Ex: Department of the Interior","Unit Affected (Specific office, program, or division affected)
+Ex: ""National Park Service""","Headcount (Estimated number layoffs)
+Ex: 30","Criticality (Clarifying whether roles are frontline or administrative)
+Ex: 0 = Admin Support/Backend","Function Affected (OPM occupational series code that describes the primary function of the affected role(s))
+Ex: 0018","Hiring Type (Type of federal service position)
+Ex: Senior Executive","Employment Status (Status of original employment)
+Ex: ""Career, Probationary, Temporary, Contract, Mix, or Unknown""","Date Announced (Date layoff was announced)
+Ex: 11/5/2025","Reason Provided (Official rationale or source language)
+Ex: Budget","Departure Type (Type of separation)
+Ex: ""Voluntary""","Backfill Strategy (Planned or actual response)
+Ex: ""Partial reassignment to another program""","Program Delivery (Projected possibility for ongoing program delivery)
+Ex: Poor, Average, Strong","Data Source( URL or title of primary document/source)
+Ex:""FOIA""","Notes (Free-text notes or context)
+Ex: ""Staff reductions will halt two multi-year studies on silicosis""","Data Confidence (Confidence in the validity of source)
+Ex: High, Medium, Low","Effective Date (Date layoff went into effect)
+Ex: 11/5/2025  ","Record Updated (Last modified date)
+Ex: 11/5/2025","Union Representation (Whether employees were union-represented)
+Ex: 0 = No Representation","Capability Loss Narrative (Narrative summary of lost capabilities)
+Ex: ""NIOSH’s ability to conduct mine hazard tracking in WV significantly reduced""","Expertise Loss (Type of specialized knowledge lost)
+Ex: ""Toxicology"", ""Field Epidemiology""","Region Affected (FIPS code for state and/or county)
+Ex: 27053",Email Address,Approve? (THIS MAKES THE ROW'S DATA LIVE)
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+4/21/2025 15:22:10,IRS,DEI,2134,0 = Admin Support/ Backend,0018,Competative,Probationary,4/1/2025,Budget,Voluntary- Unplanned Reduction,none,Poor,FOIA,This is a test,High,4/17/2025,3/31/2025,0 = No Represenation,NIOSH’s ability to conduct mine hazard tracking in WV significantly reduced,HR,01000,abc@gmail.com,YES
