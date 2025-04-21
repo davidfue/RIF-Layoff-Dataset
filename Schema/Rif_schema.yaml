@@ -1,0 +1,166 @@
+core_metadata:
+  - field: rif_id
+    description: unique ID for RIF event
+    type: string
+    required: true
+    example: RIF-2025-00042
+
+  - field: agency_name
+    description: full name of agency or sub-agency
+    type: string
+    required: true
+    example: Department of the Interior
+
+  - field: unit_affected
+    description: specific office, program, or division affected
+    type: string
+    required: false
+    example: National Park Service
+
+  - field: date_announced
+    description: date layoff was announced
+    type: date
+    required: false
+    example: 2025-04-01
+
+  - field: effective_date
+    description: date layoff went into effect
+    type: date
+    required: true
+    example: 2025-06-01
+
+  - field: region_affected
+    description: FIPS code for state and/or county
+    type: integer
+    required: true
+    example: 27053
+
+  - field: reason_provided
+    description: official rationale or source language
+    type: string
+    required: true
+    example: Budget
+
+  - field: departure_type
+    description: type of separation
+    type: enum
+    required: true
+    example: Involuntary- Planned Reduction
+    options:
+      - Voluntary- Planned Reduction
+      - Voluntary- Unplanned Reduction
+      - Voluntary
+      - Involuntary- Planned Reduction
+      - Involuntary- Unplanned Reduction
+      - Involuntary
+
+  - field: data_source
+    description: URL or title of primary document/source
+    type: string
+    required: true
+    example: FOIA
+
+  - field: record_updated
+    description: last modified date
+    type: date
+    required: true
+    example: 2025-04-17
+
+headcount_and_employment_data:
+  - field: headcount
+    description: estimated number of employees affected
+    type: integer
+    required: true
+    example: 15
+
+  - field: hiring_type
+    description: type of federal civil service position
+    type: enum
+    required: true
+    example: Competitive
+    options:
+      - Competitive
+      - Excepted
+      - Senior Executive
+
+  - field: employment_status
+    description: status at time of layoff
+    type: enum
+    required: true
+    example: Career
+    options:
+      - Career
+      - Probationary
+      - Temporary
+      - Contractor
+      - Mix
+      - Unknown
+
+  - field: union_representation
+    description: whether employees were union-represented
+    type: binary
+    required: false
+    example: 0
+    notes: 0 = not represented, 1 = represented by union
+
+functional_impact:
+  - field: function_affected
+    description: OPM occupational series code that describes the primary function of the affected role(s)
+    type: integer
+    required: true
+    example: 0018
+
+  - field: capability_loss_narr
+    description: narrative summary of lost capabilities
+    type: string
+    required: false
+    example: NIOSH’s ability to conduct mine hazard tracking in WV significantly reduced
+
+  - field: criticality
+    description: clarifying whether roles are frontline or administrative
+    type: binary
+    required: false
+    example: 1
+    notes: 0 = admin support/backend, 1 = mission critical/frontline
+
+  - field: backfill_strategy
+    description: planned or actual response
+    type: string
+    required: true
+    example: Partial reassignment to another program
+
+  - field: expertise_loss
+    description: type of specialized knowledge lost
+    type: list
+    required: false
+    example: ["Toxicology", "Field Epidemiology"]
+
+  - field: program_delivery
+    description: projected possibility for ongoing program delivery
+    type: enum
+    required: false
+    example: Average
+    options:
+      - Poor
+      - Average
+      - Strong
+
+other:
+  - field: notes
+    description: free-text notes or context
+    type: string
+    required: false
+    example: Staff reductions will halt two multi-year studies on silicosis
+
+  - field: data_confidence
+    description: confidence in the validity of source
+    type: enum
+    required: false
+    example: Medium
+    options:
+      - High
+      - Medium
+      - Low
+
+
+
