@@ -60,6 +60,12 @@ core_metadata:
     required: true
     example: FOIA
 
+  - field: source_type
+    description: citation of the validity of source
+    type: string
+    required: true
+    example: press release
+
   - field: record_updated
     description: last modified date
     type: date
@@ -116,13 +122,6 @@ functional_impact:
     required: false
     example: NIOSH’s ability to conduct mine hazard tracking in WV significantly reduced
 
-  - field: criticality
-    description: clarifying whether roles are frontline or administrative
-    type: binary
-    required: false
-    example: 1
-    notes: 0 = admin support/backend, 1 = mission critical/frontline
-
   - field: backfill_strategy
     description: planned or actual response
     type: string
@@ -151,16 +150,3 @@ other:
     type: string
     required: false
     example: Staff reductions will halt two multi-year studies on silicosis
-
-  - field: data_confidence
-    description: confidence in the validity of source
-    type: enum
-    required: false
-    example: Medium
-    options:
-      - High
-      - Medium
-      - Low
-
-
-
