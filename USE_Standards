@@ -1,23 +1,38 @@
-Ethical Use Guidelines
-This project deals with real federal government workers, agency missions, and public service. As stewards of this framework, we ask all contributors and users to follow these guidelines to promote care, accountability, and context when using or extending the schema. 
-Principles of Ethical Use
-Human-centered, always: Data may represent structural impacts, but every row reflects lived experience. Avoid generalizations or assumptions that erase nuance, and never use a dataset to shame, target, or reduce people to job titles. 
-Respect intent & limitations: Our CSV schema was built to support transparency, responsible planning, and historical documentation. It is not designed for performance review, political agendas, or punitive audits. Do not use this tool to draw unsupported conclusions about agency effectiveness. 
-No misuse or misrepresentation: Users must not fabricate or manipulate fields to create misleading narratives; present data using our CSV schema as exhaustive or real-time – many layoffs are never publicly documented; extract or reverse-engineer individual identities or personally identifiable information.
-Context before claims: Data without context can cause harm. If citing or visualizing data from our framework, provide caveats, assumptions, and source transparency, and clarify limitations of accuracy, completeness, and interpretability. 
-Known Risks & Potential Mitigation
-Overestimation of utility: Treat our tool as a scaffolding, not a full picture. Document known gaps. 
-Misuse or politicization: Do not use for advocacy without context. See above principles. 
-Data doesn’t arrive/exist: Encourage collaborative sourcing, and add “unknown” where needed. 
-Loss of nuance or insensitivity: Never flatten data to depersonalized counts without cautionary framing. 
-Good Faith Use Includes:
-State and local governments, as well as federal agencies and congressional teams, reviewing and stress-testing internal workforce and program planning
-Academic research on public sector workforce trends 
-Journalism that foregrounds context 
-Civil society watchdogs advocating for transparency 
-Unacceptable Use Includes: 
-Attempting to identify or target individuals or groups 
-Using data to penalize or publicly criticize federal workers 
-Selling data for commercial prediction or surveillance tools
-If you’re unsure whether your use case aligns with these values, reach out to our team at [insert contact info].
+# Ethical Use Guidelines
 
+## This project deals with real federal government workers, agency missions, and public service. As stewards of this framework, we ask all contributors and users to follow these guidelines to promote care, accountability, and context when using or extending the schema. 
+
+## Principles of Ethical Use
+
+### *Human-centered, always*: Data may represent structural impacts, but every row reflects lived experience. Avoid generalizations or assumptions that erase nuance, and never use a dataset to shame, target, or reduce people to job titles. 
+
+### *Respect intent & limitations*: Our CSV schema was built to support transparency, responsible planning, and historical documentation. It is not designed for performance review, political agendas, or punitive audits. Do not use this tool to draw unsupported conclusions about agency effectiveness. 
+
+### *No misuse or misrepresentation*: Users must not fabricate or manipulate fields to create misleading narratives; present data using our CSV schema as exhaustive or real-time – many layoffs are never publicly documented; extract or reverse-engineer individual identities or personally identifiable information.
+
+### *Context before claims*: Data without context can cause harm. If citing or visualizing data from our framework, provide caveats, assumptions, and source transparency, and clarify limitations of accuracy, completeness, and interpretability. 
+
+## Known Risks & Potential Mitigation
+
+### - Overestimation of utility: Treat our tool as a scaffolding, not a full picture. Document known gaps. 
+
+### - Misuse or politicization: Do not use for advocacy without context. See above principles. 
+
+### - Data doesn’t arrive/exist: Encourage collaborative sourcing, and add “unknown” where needed. 
+
+### - Loss of nuance or insensitivity: Never flatten data to depersonalized counts without cautionary framing. 
+
+## Good Faith Use Includes:
+
+### - State and local governments, as well as federal agencies and congressional teams, reviewing and stress-testing internal workforce and program planning
+### - Academic research on public sector workforce trends 
+### - Journalism that foregrounds context 
+### - Civil society watchdogs advocating for transparency 
+
+## Unacceptable Use Includes: 
+
+### - Attempting to identify or target individuals or groups 
+### - Using data to penalize or publicly criticize federal workers 
+### - Selling data for commercial prediction or surveillance tools
+
+## If you’re unsure whether your use case aligns with these values, reach out to our team.
